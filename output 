@@ -1,1 +1,54 @@
- 
+Vehicle Management System - C++
+
+1. Add
+2. Display
+3. Search
+4. Delete
+0. Exit
+Enter your choice: 1
+Enter ID, Name, Type, Price: 101 activa scooter 80000
+Added successfully
+
+1. Add
+2. Display
+3. Search
+4. Delete
+0. Exit
+Enter your choice: 1
+Enter ID, Name, Type, Price: 102 unicorn bike 75000
+Added successfully
+
+1. Add
+2. Display
+3. Search
+4. Delete
+0. Exit
+Enter your choice: 2
+101 activa scooter 80000
+102 unicorn bike 75000
+
+1. Add
+2. Display
+3. Search
+4. Delete
+0. Exit
+Enter your choice: 3
+Enter ID: 102
+Found: unicorn bike 75000
+
+1. Add
+2. Display
+3. Search
+4. Delete
+0. Exit
+Enter your choice: 4
+Enter ID: 102
+Deleted successfully
+
+1. Add
+2. Display
+3. Search
+4. Delete
+0. Exit
+Enter your choice: 0
+Exiting... 
