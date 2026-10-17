@@ -1,12 +1,13 @@
-Vehicle Management System - C++
-
 1. Add
 2. Display
 3. Search
 4. Delete
 0. Exit
 Enter your choice: 1
-Enter ID, Name, Type, Price: 101 activa scooter 80000
+Enter ID: 101
+Enter Name: Activa
+Enter Type: Scooter
+Enter Price: 80000
 Added successfully
 
 1. Add
@@ -15,7 +16,106 @@ Added successfully
 4. Delete
 0. Exit
 Enter your choice: 1
-Enter ID, Name, Type, Price: 102 unicorn bike 75000
+Enter ID: 102
+Enter Name: Unicorn
+Enter Type: Bike
+Enter Price: 75000
+Added successfully
+
+1. Add
+2. Display
+3. Search
+4. Delete
+0. Exit
+Enter your choice: 1
+Enter ID: 103
+Enter Name: Swift
+Enter Type: Car
+Enter Price: 650000
+Added successfully
+
+1. Add
+2. Display
+3. Search
+4. Delete
+0. Exit
+Enter your choice: 1
+Enter ID: 104
+Enter Name: Splendor
+Enter Type: Bike
+Enter Price: 70000
+Added successfully
+
+1. Add
+2. Display
+3. Search
+4. Delete
+0. Exit
+Enter your choice: 1
+Enter ID: 105
+Enter Name: Creta
+Enter Type: Car
+Enter Price: 1200000
+Added successfully
+
+1. Add
+2. Display
+3. Search
+4. Delete
+0. Exit
+Enter your choice: 1
+Enter ID: 106
+Enter Name: Jupiter
+Enter Type: Scooter
+Enter Price: 85000
+Added successfully
+
+1. Add
+2. Display
+3. Search
+4. Delete
+0. Exit
+Enter your choice: 1
+Enter ID: 107
+Enter Name: Thar
+Enter Type: SUV
+Enter Price: 1500000
+Added successfully
+
+1. Add
+2. Display
+3. Search
+4. Delete
+0. Exit
+Enter your choice: 1
+Enter ID: 108
+Enter Name: Pulsar
+Enter Type: Bike
+Enter Price: 110000
+Added successfully
+
+1. Add
+2. Display
+3. Search
+4. Delete
+0. Exit
+Enter your choice: 1
+Enter ID: 109
+Enter Name: Baleno
+Enter Type: Car
+Enter Price: 800000
+Added successfully
+
+1. Add
+2. Display
+3. Search
+4. Delete
+0. Exit
+Enter your choice: 1
+Enter ID: 110
+Enter Name: Nexon
+Enter Type: SUV
+Enter Price: 1000000
 Added successfully
 
 1. Add
@@ -24,26 +124,46 @@ Added successfully
 4. Delete
 0. Exit
 Enter your choice: 2
-101 activa scooter 80000
-102 unicorn bike 75000
-
-1. Add
-2. Display
-3. Search
-4. Delete
-0. Exit
-Enter your choice: 3
-Enter ID: 102
-Found: unicorn bike 75000
-
-1. Add
-2. Display
-3. Search
-4. Delete
-0. Exit
-Enter your choice: 4
-Enter ID: 102
-Deleted successfully
+ID: 101
+Name: Activa
+Type: Scooter
+Price: 80000
+ID: 102
+Name: Unicorn
+Type: Bike
+Price: 75000
+ID: 103
+Name: Swift
+Type: Car
+Price: 650000
+ID: 104
+Name: Splendor
+Type: Bike
+Price: 70000
+ID: 105
+Name: Creta
+Type: Car
+Price: 1200000
+ID: 106
+Name: Jupiter
+Type: Scooter
+Price: 85000
+ID: 107
+Name: Thar
+Type: SUV
+Price: 1500000
+ID: 108
+Name: Pulsar
+Type: Bike
+Price: 110000
+ID: 109
+Name: Baleno
+Type: Car
+Price: 800000
+ID: 110
+Name: Nexon
+Type: SUV
+Price: 1000000
 
 1. Add
 2. Display
@@ -51,4 +171,4 @@ Deleted successfully
 4. Delete
 0. Exit
 Enter your choice: 0
-Exiting... 
+Exiting...
