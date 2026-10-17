@@ -1,3 +1,4 @@
+ 
 #include <iostream>
 #include <string>
 using namespace std;
@@ -9,7 +10,10 @@ struct Vehicle {
     Vehicle *next;
 
     Vehicle(int i, string n, string t, float p) {
-        id = i; name = n; type = t; price = p;
+        id = i;
+        name = n;
+        type = t;
+        price = p;
         next = NULL;
     }
 };
@@ -18,15 +22,26 @@ class VehicleList {
     Vehicle *head;
 
 public:
-    VehicleList() { head = NULL; }
+    VehicleList() {
+        head = NULL;
+    }
 
     void add() {
         int id;
         string name, type;
         float price;
 
-        cout << "Enter ID, Name, Type, Price: ";
-        cin >> id >> name >> type >> price;
+        cout << "Enter ID: ";
+        cin >> id;
+
+        cout << "Enter Name: ";
+        cin >> name;
+
+        cout << "Enter Type: ";
+        cin >> type;
+
+        cout << "Enter Price: ";
+        cin >> price;
 
         Vehicle *n = new Vehicle(id, name, type, price);
 
@@ -34,31 +49,45 @@ public:
             head = n;
         else {
             Vehicle *p = head;
-            while (p->next) p = p->next;
+            while (p->next)
+                p = p->next;
             p->next = n;
         }
+
         cout << "Added successfully\n";
     }
 
     void display() {
         Vehicle *p = head;
+
+        if (p == NULL) {
+            cout << "No vehicles available\n";
+            return;
+        }
+
         while (p) {
-            cout << p->id << " " << p->name << " "
-                 << p->type << " " << p->price << endl;
+            cout << "ID: " << p->id
+                 << "\nName: " << p->name
+                 << "\nType: " << p->type
+                 << "\nPrice: " << p->price << endl;
             p = p->next;
         }
     }
 
     void search(int id) {
         Vehicle *p = head;
+
         while (p) {
             if (p->id == id) {
-                cout << "Found: " << p->name << " "
-                     << p->type << " " << p->price << endl;
+                cout << "Found:\n";
+                cout << "Name: " << p->name
+                     << "\nType: " << p->type
+                     << "\nPrice: " << p->price << endl;
                 return;
             }
             p = p->next;
         }
+
         cout << "Vehicle not found\n";
     }
 
@@ -75,8 +104,10 @@ public:
             return;
         }
 
-        if (q) q->next = p->next;
-        else head = p->next;
+        if (q)
+            q->next = p->next;
+        else
+            head = p->next;
 
         delete p;
         cout << "Deleted successfully\n";
@@ -97,21 +128,30 @@ int main() {
         cin >> ch;
 
         switch (ch) {
-            case 1: v.add(); break;
-            case 2: v.display(); break;
+            case 1:
+                v.add();
+                break;
+
+            case 2:
+                v.display();
+                break;
+
             case 3:
                 cout << "Enter ID: ";
                 cin >> id;
                 v.search(id);
                 break;
+
             case 4:
                 cout << "Enter ID: ";
                 cin >> id;
                 v.remove(id);
                 break;
+
             case 0:
                 cout << "Exiting...\n";
                 break;
+
             default:
                 cout << "Invalid choice\n";
         }
